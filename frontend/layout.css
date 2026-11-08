@@ -1,0 +1,51 @@
+.page-body:has(.item-page) {
+  width: 100%;
+  max-width: none;
+  margin-right: 0;
+  margin-left: 0;
+  padding-right: 0;
+  padding-left: 0;
+}
+
+.page-body:has(.item-page) .layout-main-section-wrapper {
+  width: 100%;
+  max-width: none;
+  padding-right: 0;
+  padding-left: 0;
+}
+
+.page-body:has(.item-page) .layout-main {
+  margin-right: 0;
+  margin-left: 0;
+}
+
+.page-body:has(.item-page) .layout-main-section {
+  width: 100%;
+}
+
+.page-body:has(.designed-dashboard) {
+  width: 100%;
+  max-width: none;
+  margin-right: 0;
+  margin-left: 0;
+  padding-right: 0;
+  padding-left: 0;
+}
+
+.page-body:has(.designed-dashboard) .layout-main-section-wrapper {
+  width: 100%;
+  max-width: none;
+  padding-right: 0;
+  padding-left: 0;
+}
+
+.page-body:has(.designed-dashboard) .layout-main {
+  margin-right: 0;
+  margin-left: 0;
+}
+
+.page-body:has(.designed-dashboard) .layout-main-section {
+  width: 100%;
+  padding-right: 0;
+  padding-left: 0;
+}

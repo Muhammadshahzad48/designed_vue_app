@@ -1,0 +1,258 @@
+body:has(.for-login) {
+	min-height: 100vh;
+	background:
+		radial-gradient(ellipse at 12% 18%, rgba(52, 181, 232, 0.09), transparent 30%),
+		radial-gradient(ellipse at 88% 82%, rgba(48, 94, 148, 0.08), transparent 28%),
+		#f4f7fb;
+}
+
+body:has(.for-login) .navbar {
+	border-bottom: 1px solid rgba(32, 52, 71, 0.06);
+	background: rgba(255, 255, 255, 0.72);
+	backdrop-filter: blur(12px);
+}
+
+body:has(.for-login) .navbar > .container {
+	width: min(1200px, calc(100% - 40px));
+	max-width: none;
+}
+
+body:has(.for-login) .page-breadcrumbs,
+body:has(.for-login) .page-header-wrapper,
+body:has(.for-login) .page-footer,
+body:has(.for-login) .web-footer {
+	display: none !important;
+}
+
+body:has(.for-login) .page-content-wrapper {
+	display: flex;
+	min-height: calc(100vh - 56px);
+	align-items: center;
+	justify-content: center;
+	padding: 42px 20px 64px;
+}
+
+body:has(.for-login) .page-content-wrapper > main.container {
+	width: 100%;
+	max-width: 430px;
+	margin: 0;
+	padding: 0;
+}
+
+body:has(.for-login) .page-content {
+	width: 100%;
+}
+
+body:has(.for-login) .for-login {
+	width: 100%;
+}
+
+body:has(.for-login) .for-login .page-card-head {
+	padding: 0 0 22px;
+}
+
+body:has(.for-login) .for-login .page-card-head img {
+	display: none;
+}
+
+body:has(.for-login) .for-login .page-card-head::before {
+	display: grid;
+	width: 54px;
+	height: 54px;
+	margin: 0 auto 16px;
+	place-items: center;
+	border: 1px solid rgba(54, 181, 232, 0.2);
+	border-radius: 16px;
+	background: linear-gradient(145deg, #45c2ed, #2196ca);
+	box-shadow: 0 10px 24px rgba(32, 155, 204, 0.23);
+	color: #102b3c;
+	content: "D";
+	font-size: 24px;
+	font-weight: 800;
+}
+
+body:has(.for-login) .for-login .page-card-head h4 {
+	margin: 0;
+	color: #1d2c3b;
+	font-size: 25px;
+	font-weight: 700;
+	letter-spacing: -0.035em;
+}
+
+body:has(.for-login) .for-login .login-content.page-card {
+	max-width: none;
+	margin: 0;
+	padding: 34px 36px 32px;
+	border: 1px solid rgba(213, 223, 232, 0.9);
+	border-radius: 16px;
+	background: rgba(255, 255, 255, 0.94);
+	box-shadow:
+		0 24px 60px rgba(28, 48, 67, 0.09),
+		0 3px 10px rgba(28, 48, 67, 0.035);
+}
+
+body:has(.for-login) .for-login .login-content form {
+	max-width: none;
+}
+
+body:has(.for-login) .for-login .page-card-body {
+	padding: 0;
+}
+
+body:has(.for-login) .for-login .page-card-body .form-group {
+	margin-bottom: 17px;
+}
+
+body:has(.for-login) .for-login .page-card-body .email-field,
+body:has(.for-login) .for-login .page-card-body .password-field {
+	position: relative;
+}
+
+body:has(.for-login) .for-login .page-card-body input[type="text"],
+body:has(.for-login) .for-login .page-card-body input[type="email"],
+body:has(.for-login) .for-login .page-card-body input[type="password"] {
+	width: 100%;
+	height: 48px;
+	margin: 0;
+	padding: 0 42px;
+	border: 1px solid #dfe6ec;
+	border-radius: 9px;
+	background: #f9fbfc;
+	color: #1d2c3b;
+	font-size: 14px;
+	transition:
+		border-color 0.18s ease,
+		box-shadow 0.18s ease,
+		background-color 0.18s ease;
+}
+
+body:has(.for-login) .for-login .page-card-body input::placeholder {
+	color: #8492a0;
+}
+
+body:has(.for-login) .for-login .page-card-body input:focus {
+	border-color: #31a8d7;
+	outline: 0;
+	background: #fff;
+	box-shadow: 0 0 0 4px rgba(49, 168, 215, 0.13);
+}
+
+body:has(.for-login) .for-login .page-card-body .field-icon {
+	top: 16px;
+	left: 14px;
+	width: 16px;
+	height: 16px;
+	color: #7d8b98;
+}
+
+body:has(.for-login) .for-login .page-card-body .toggle-password {
+	top: 16px;
+	right: 14px;
+	color: #587082;
+	font-size: 12px;
+	font-weight: 600;
+}
+
+body:has(.for-login) .for-login .forgot-password-message {
+	margin: 2px 0 20px;
+}
+
+body:has(.for-login) .for-login .forgot-password-message a,
+body:has(.for-login) .for-login .sign-up-message a {
+	color: #1489bb;
+	font-weight: 600;
+	text-decoration: none;
+}
+
+body:has(.for-login) .for-login .forgot-password-message a:hover,
+body:has(.for-login) .for-login .sign-up-message a:hover {
+	color: #086c98;
+	text-decoration: underline;
+}
+
+body:has(.for-login) .for-login .page-card-actions {
+	margin-top: 0;
+}
+
+body:has(.for-login) .for-login .page-card-actions .btn-login {
+	height: 46px;
+	border: 0;
+	border-radius: 9px;
+	background: linear-gradient(110deg, #243647, #172634);
+	box-shadow: 0 7px 16px rgba(25, 43, 59, 0.18);
+	color: #fff;
+	font-size: 14px;
+	font-weight: 650;
+	transition:
+		transform 0.18s ease,
+		box-shadow 0.18s ease,
+		filter 0.18s ease;
+}
+
+body:has(.for-login) .for-login .page-card-actions .btn-login:hover {
+	transform: translateY(-1px);
+	box-shadow: 0 10px 20px rgba(25, 43, 59, 0.22);
+	filter: brightness(1.12);
+}
+
+body:has(.for-login) .for-login .social-logins {
+	margin-top: 20px;
+}
+
+body:has(.for-login) .for-login .login-divider {
+	display: flex;
+	align-items: center;
+	gap: 12px;
+	color: #8b98a4;
+	font-size: 12px;
+}
+
+body:has(.for-login) .for-login .login-divider::before,
+body:has(.for-login) .for-login .login-divider::after {
+	height: 1px;
+	flex: 1;
+	background: #e8edf1;
+	content: "";
+}
+
+body:has(.for-login) .for-login .btn-login-option {
+	min-height: 42px;
+	border: 1px solid #e1e8ed;
+	border-radius: 8px;
+	background: #f8fafb;
+	color: #3c5264;
+}
+
+body:has(.for-login) .for-login .btn-login-option:hover {
+	border-color: #c8d6df;
+	background: #f0f5f8;
+}
+
+body:has(.for-login) .for-login .sign-up-message {
+	margin-top: 18px;
+	color: #728190;
+	font-size: 13px;
+}
+
+@media (max-width: 480px) {
+	body:has(.for-login) .page-content-wrapper {
+		min-height: calc(100vh - 48px);
+		padding: 28px 16px 40px;
+	}
+
+	body:has(.for-login) .for-login .login-content.page-card {
+		padding: 28px 22px 24px;
+		border-radius: 13px;
+	}
+
+	body:has(.for-login) .for-login .page-card-head h4 {
+		font-size: 22px;
+	}
+}
+
+@media (prefers-reduced-motion: reduce) {
+	body:has(.for-login) .for-login .page-card-body input,
+	body:has(.for-login) .for-login .page-card-actions .btn-login {
+		transition: none;
+	}
+}

@@ -26,11 +26,16 @@ app_license = "mit"
 
 # include js, css files in header of desk.html
 # app_include_css = "/assets/designed_vue_app/css/designed_vue_app.css"
-# app_include_js = "/assets/designed_vue_app/js/designed_vue_app.js"
+app_include_js = "/assets/designed_vue_app/js/purchase_order_route.js?v=native-doctype-list-v1"
+app_include_css = [
+	"/assets/designed_vue_app/css/reports.css?v=report-layout",
+	"/assets/designed_vue_app/css/reports_layout.css?v=app-navbar-v4",
+]
 
 # include js, css files in header of web template
-# web_include_css = "/assets/designed_vue_app/css/designed_vue_app.css"
+web_include_css = ["/assets/designed_vue_app/css/login_layout.css?v=login-layout-v1"]
 # web_include_js = "/assets/designed_vue_app/js/designed_vue_app.js"
+update_website_context = ["designed_vue_app.website.update_website_context"]
 
 # include custom scss in every website theme (without file extension ".scss")
 # website_theme_scss = "designed_vue_app/public/scss/website"
@@ -246,4 +251,3 @@ app_license = "mit"
 # ------------
 # List of apps whose translatable strings should be excluded from this app's translations.
 # ignore_translatable_strings_from = []
-
